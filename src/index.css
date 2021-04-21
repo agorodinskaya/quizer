@@ -58,12 +58,14 @@ Variables
   --clr-lder-purple: hsla(273, 89%, 41%, 0.726);
   --gradient: linear-gradient(
     90deg,
-    #c316f7ef,
-    #ee0987,
-    #1dfd7362,
-    #1dfd9471,
+    #c316f7ab,
+    #ee0987bb,
+    #6b1dfd62,
+    #dbfd1dd5,
+    #331dfd71,
     #f562acc6
   );
+  --clr-anim: hsla(73, 89%, 41%, 0.726);
 }
 /*
 =============== 
@@ -170,111 +172,6 @@ p {
 }
 .text-center {
   text-align: center;
-}
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pulse-blue {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(224, 52, 215, 0.194);
-  }
-  50% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(15, 174, 241, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(224, 99, 218, 0.144);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-25px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.loader-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #333; */
-  margin: 20rem 20rem;
-}
-.circle {
-  background-color: var(--clr-lder-blue);
-  width: 4rem;
-  height: 3rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: pulse-blue 1s linear infinite;
-}
-.circle1 {
-  background-color: var(--clr-lder-green);
-  width: 7rem;
-  height: 6rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: bounce 1.5s linear infinite;
-}
-
-.circle2 {
-  background-color: var(--clr-lder-pink);
-  width: 4rem;
-  height: 3rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: pulse-blue 1s linear infinite;
-}
-.circle3 {
-  background-color: var(--clr-lder-purple);
-  width: 7rem;
-  height: 6rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: bounce 1.9s linear infinite;
-}
-.circle4 {
-  background-color: var(--clr-lder-orange);
-  width: 4rem;
-  height: 3rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: pulse-blue 1s linear infinite;
-}
-.circle5 {
-  background-color: var(--clr-lder-red);
-  width: 7rem;
-  height: 6rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: bounce 1.5s linear infinite;
-}
-.circle6 {
-  background-color: var(--clr-lder-yell);
-  width: 4rem;
-  height: 3rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: pulse-blue 1s linear infinite;
-}
-.circle7 {
-  background-color: var(--clr-lder-blue1);
-  width: 7rem;
-  height: 6rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  animation: bounce 1.9s linear infinite;
 }
 
 .btn {
